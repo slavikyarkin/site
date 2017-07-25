@@ -12,9 +12,21 @@
 */
 
 Route::get('/', function () {
+
     return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/start', function (){
+
+    DB::table('users')->delete();
+
+});
+Route::get('/admin','AdminController@home_page_admin');
+Route::get('/admin/show_users','AdminController@show_users');
+Route::get('/admin/show_users/show_info_user','AdminController@show_info_user');
+Route::get('/admin/show_users/show_info_user','AdminController@show_info_user');
+Route::get('/admin/readability','AdminController@readability');
+Route::get('/admin/editing_a_schedule','AdminController@editing_a_schedule');
