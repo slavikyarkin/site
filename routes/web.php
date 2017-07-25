@@ -14,8 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/kirill', function () {
-	echo "Hello world";
-	return;
-});
