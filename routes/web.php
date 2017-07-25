@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/kirill', function () {
-	echo "Hello world";
-	return;
-});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
