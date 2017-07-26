@@ -20,10 +20,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::get('/admin','AdminController@home_page_admin');
-Route::get('/admin/show_users','AdminController@show_users');
-Route::get('/admin/show_users/show_info_user','AdminController@show_info_user');
-Route::get('/admin/show_users/show_info_user','AdminController@show_info_user');
-Route::get('/admin/readability','AdminController@readability');
-Route::get('/admin/editing_a_schedule','AdminController@editing_a_schedule');
+    Route::get('/', ['uses'=>'Admin\AdminController@show','as'=>'admin_index']);
+});
