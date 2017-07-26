@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>YevgeniyaVentura</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -22,7 +22,7 @@
             }
 
             .full-height {
-                height: 50vh;
+                height: 85vh;
             }
 
             .flex-center {
@@ -30,7 +30,6 @@
                 display: flex;
                 justify-content: center;
             }
-
             .position-ref {
                 position: relative;
             }
@@ -44,11 +43,25 @@
             .content {
                 text-align: center;
             }
+            @media screen and (max-width: 1000px) {
+
+                .content{
+                    font-size: 50%;
+                    height: 85vh;
+                    margin-top:100px;
+                }
+            }
 
             .title {
                 font-size: 70px;
             }
+            @media screen and (max-width: 1000px) {
 
+                .title{
+                    font-size: 40px;
+                    top: 110px;
+                }
+            }
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -62,6 +75,17 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .links__text{
+               color: black;
+            }
+            @media screen and (max-width: 1000px) {
+
+                .links__text{
+                    font-size: 13px;
+                    top: 110px;
+                }
+            }
+
         </style>
     </head>
     <body>
@@ -86,9 +110,16 @@
                 </div>
 
                 <div class="links">
-
-
-
+<div class="links__text">
+                    <p>Here are two things I think are important about therapy: </p> <p>
+                            1)People can find relief  for symptoms like worry,loneliness, sadness, hopelessness, and craving; and </p> <p>
+                            2) People can build psychological strength. Psychological strength allows people to have more fulfilling relationships, </p> <p>
+                            use their capacities more effectively, and bring more flexibility and creativity to problems in living. </p> <p>
+                    Psychological strength is developed over time by talking, examining the obstacles to talking, and using what happens in the session  </p> <p>
+                            as a way to understand what goes on in the outside world. </p> <p>
+                    I work with problems related to trauma, addictions, anxiety, depression, anger, and persistent problems in relating to others.  </p> <p>
+                            I work with individuals, couples, and groups. I have specialized experience in working with partners/families of combat veterans and people in early recovery. </p>
+</div>
                 </div>
             </div>
         </div>
