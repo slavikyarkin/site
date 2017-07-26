@@ -22,7 +22,7 @@
             }
 
             .full-height {
-                height: 100vh;
+                height: 50vh;
             }
 
             .flex-center {
@@ -73,6 +73,7 @@
                         <a href="{{ url('/home') }}">Payment</a>
                     @else
                         <a href="{{ url('/login') }}">Login</a>
+                        <a href="{{ url('/home') }}">Contact</a>
                         <a href="{{ url('/register') }}">Register</a>
 
                     @endif
@@ -85,8 +86,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ url('/home') }}">About</a>
-                    <a href="{{ url('/home') }}">Contact</a>
+
+
 
                 </div>
             </div>
