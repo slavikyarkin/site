@@ -96,33 +96,19 @@
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/home') }}">Payment</a>
                         <a href="{{ url('/') }}">Contact</a>
-
-
-
-                                <a href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    Logout
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                         
-
-
-
-
-
-
-
-
-
+                            <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                                      document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+                            <form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
                     @else
+                        <a href="{{ url('/home') }}">Payment</a>
+                        <a href="{{ url('/') }}">Contact</a>
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
-                        <a href="{{ url('/') }}">Contact</a>
-
                     @endif
                 </div>
             @endif
@@ -133,16 +119,16 @@
                 </div>
 
                 <div class="links">
-<div class="links__text">
-                    <p>Here are two things I think are important about therapy: </p> <p>
-                            1)People can find relief  for symptoms like worry,loneliness, sadness, hopelessness, and craving; and </p> <p>
-                            2) People can build psychological strength. Psychological strength allows people to have more fulfilling relationships, </p> <p>
-                            use their capacities more effectively, and bring more flexibility and creativity to problems in living. </p> <p>
-                    Psychological strength is developed over time by talking, examining the obstacles to talking, and using what happens in the session  </p> <p>
-                            as a way to understand what goes on in the outside world. </p> <p>
-                    I work with problems related to trauma, addictions, anxiety, depression, anger, and persistent problems in relating to others.  </p> <p>
-                            I work with individuals, couples, and groups. I have specialized experience in working with partners/families of combat veterans and people in early recovery. </p>
-</div>
+                    <div class="links__text">
+                        <p>Here are two things I think are important about therapy: </p> <p>
+                                1)People can find relief  for symptoms like worry,loneliness, sadness, hopelessness, and craving; and </p> <p>
+                                2) People can build psychological strength. Psychological strength allows people to have more fulfilling relationships, </p> <p>
+                                use their capacities more effectively, and bring more flexibility and creativity to problems in living. </p> <p>
+                        Psychological strength is developed over time by talking, examining the obstacles to talking, and using what happens in the session  </p> <p>
+                                as a way to understand what goes on in the outside world. </p> <p>
+                        I work with problems related to trauma, addictions, anxiety, depression, anger, and persistent problems in relating to others.  </p> <p>
+                                I work with individuals, couples, and groups. I have specialized experience in working with partners/families of combat veterans and people in early recovery. </p>
+                    </div>
                 </div>
             </div>
         </div>
