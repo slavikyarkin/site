@@ -20,5 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::group(['prefix'=>'admin','middleware'=>'web', 'auth'], function() {
     Route::get('/', ['uses'=>'Admin\AdminController@show','as'=>'admin_index']);
+    Route::get('/show_users', ['uses'=>'Admin\AdminShowController@show','as'=>'admin_show_users']);
 });
