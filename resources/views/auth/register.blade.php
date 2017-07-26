@@ -42,7 +42,7 @@
                             <label for="birthday" class="col-md-4 control-label">Birthday</label>
 
                             <div class="col-md-6">
-                                <input id="birthday" type="text" class="form-control" name="birthday" value="{{ old('birthday') }}" required autofocus>
+                                <input id="birthday" type="date" max="2017-01-01" min="1900-01-01" class="form-control" name="birthday" value="{{ old('birthday') }}" required autofocus>
 
                                 @if ($errors->has('birthday'))
                                     <span class="help-block">
@@ -70,7 +70,7 @@
                             <label for="phone" class="col-md-4 control-label">Phone number</label>
 
                             <div class="col-md-6">
-                                <input id="phone" type="text" class="form-control" name="phone" value="{{ old('phone') }}" required autofocus>
+                                <input id="phone" type="tel" class="form-control" name="phone" value="{{ old('phone') }}" required autofocus>
 
                                 @if ($errors->has('phone'))
                                     <span class="help-block">

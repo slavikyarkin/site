@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('surname')->nullable();
             $table->string('birthday')->nullable();
             $table->string('about')->nullable();
-            $table->string('phone')->nullable();
+            $table->integer('phone')->nullable();
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
@@ -28,8 +28,6 @@ class CreateUsersTable extends Migration
 
 
     }
-
-
     /**
      * Reverse the migrations.
      *
