@@ -55,9 +55,8 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
 
-
                         @else <li>
-
+                        <li> <a href="{{ url('/home') }}">Home</a></li>
                         <li> <a href="{{ url('/home') }}">Payment</a></li>
                         <li> <a href="{{ url('/') }}">Contact</a></li>
                             <li class="dropdown">

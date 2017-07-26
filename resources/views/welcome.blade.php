@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>YevgeniyaVentura</title>
-
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
@@ -96,8 +96,29 @@
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/home') }}">Payment</a>
                         <a href="{{ url('/') }}">Contact</a>
-                    @else
 
+
+
+                                <a href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                         
+
+
+
+
+
+
+
+
+
+                    @else
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
                         <a href="{{ url('/') }}">Contact</a>
