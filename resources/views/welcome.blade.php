@@ -81,7 +81,7 @@
             @media screen and (max-width: 1000px) {
 
                 .links__text{
-                    font-size: 13px;
+                    font-size: 15px;
                     top: 110px;
                 }
             }
@@ -95,10 +95,12 @@
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/home') }}">Payment</a>
-                    @else
                         <a href="{{ url('/') }}">Contact</a>
+                    @else
+
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
+                        <a href="{{ url('/') }}">Contact</a>
 
                     @endif
                 </div>
