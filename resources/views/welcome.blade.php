@@ -72,8 +72,8 @@
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/home') }}">Payment</a>
                     @else
+                        <a href="{{ url('/') }}">Contact</a>
                         <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/home') }}">Contact</a>
                         <a href="{{ url('/register') }}">Register</a>
 
                     @endif
