@@ -11,13 +11,11 @@ class AdminController extends Controller
     //
     public function __construct() {
 
-        $this->middleware('auth');
+        $this->middleware('check-roles:administrator');
     }
 
     public function show(Request $request){
 
-        $users = $request->user();
-
-        return view('welcome');
+        return view('admin');
     }
 }
