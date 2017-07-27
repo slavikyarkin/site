@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/home', 'HomeController@update_avatar')->name('home');
 
 Route::get('/contact', 'ContactController@showContact');
-Route::get('/payment', 'paymentController@showPayment');
+Route::get('/payment', 'PaymentController@showPayment');
 
 
 

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 
-class ContactController extends Controller{
+class PaymentController extends Controller{
 //   public function __construct()
 //   {
 //       $this->middleware('guest');
@@ -11,7 +11,7 @@ class ContactController extends Controller{
 //   }
 
 
-   public function showContact(){
-       return view('contact');
+   public function showPayment(){
+       return view('payment');
    }
 }

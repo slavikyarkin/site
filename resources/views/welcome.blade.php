@@ -97,7 +97,7 @@
         <div class="top-right links">
             @if (Auth::check())
                 <a href="{{ url('/home') }}">Home</a>
-                <a href="{{ url('/home') }}">Payment</a>
+                <a href="{{ url('/payment') }}">Payment</a>
                 <a href="{{ url('/contact') }}">Contact</a>
                 <a href="{{ route('logout') }}"
                    onclick="event.preventDefault();
@@ -108,7 +108,7 @@
                     {{ csrf_field() }}
                 </form>
             @else
-                <a href="{{ url('/home') }}">Payment</a>
+                <a href="{{ url('/payment') }}">Payment</a>
                 <a href="{{ url('/contact') }}">Contact</a>
                 <a href="{{ url('/login') }}">Login</a>
                 <a href="{{ url('/register') }}">Register</a>
