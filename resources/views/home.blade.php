@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 
-    <div style="background: black; height: 100%"class="main-block">
+    <div style=" background: url({{asset('images/backgroundForSite.jpg') }}); height: 100%"class="main-block">
 
         @section('content')
     <div  class="container">
@@ -11,8 +11,9 @@
                 border-radius: 50%; margin-right:25px; ">
               <h2 style="color: white">{{$user->name}}'s Profile </h2>
                 <form enctype="multipart/form-data" action="/home" method="post">
-                    <label > <p style="background-color: white">Update Profile Image</p></label>
-                    <input type="file" name="avatar">
+                    <label > <p style="color: #fff;">Update Profile Image</p></label>
+
+                     <input  style="color: #fff; "type="file" name="avatar">
                     <input type= "hidden" name="_token" value="{{csrf_token()}}">
                     <input type="submit" class="pull-right btn btn-sm btn-primary">
                 </form>

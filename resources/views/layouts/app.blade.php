@@ -53,13 +53,13 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li> <a href="{{ url('/home') }}">Payment</a></li>
-                            <li> <a href="{{ url('/') }}">Contact</a></li>
+                            <li> <a href="{{ url('/contact') }}">Contact</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else <li>
                         <li> <a href="{{ url('/home') }}">Home</a></li>
                         <li> <a href="{{ url('/home') }}">Payment</a></li>
-                        <li> <a href="{{ url('/') }}">Contact</a></li>
+                        <li> <a href="{{ url('/contact') }}">Contact</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position: relative; padding-left: 50px;">
                                     <img src="/uploads/avatars/{{ Auth::user()->avatar }}" style="width: 32px; height: 32px;

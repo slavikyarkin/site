@@ -98,10 +98,10 @@
             @if (Auth::check())
                 <a href="{{ url('/home') }}">Home</a>
                 <a href="{{ url('/home') }}">Payment</a>
-                <a href="{{ url('/') }}">Contact</a>
+                <a href="{{ url('/contact') }}">Contact</a>
                 <a href="{{ route('logout') }}"
                    onclick="event.preventDefault();
-                                                      document.getElementById('logout-form').submit();">
+                    document.getElementById('logout-form').submit();">
                     Logout
                 </a>
                 <form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: none;">
@@ -109,7 +109,7 @@
                 </form>
             @else
                 <a href="{{ url('/home') }}">Payment</a>
-                <a href="{{ url('/') }}">Contact</a>
+                <a href="{{ url('/contact') }}">Contact</a>
                 <a href="{{ url('/login') }}">Login</a>
                 <a href="{{ url('/register') }}">Register</a>
             @endif
