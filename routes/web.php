@@ -19,6 +19,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/home', 'HomeController@update_avatar')->name('home');
+
 
 Route::group(['prefix'=>'admin','middleware'=>'web', 'auth'], function() {
     Route::get('/', ['uses'=>'Admin\AdminController@show','as'=>'admin_index']);

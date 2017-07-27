@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" xmlns:top="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,7 +61,9 @@
                         <li> <a href="{{ url('/home') }}">Payment</a></li>
                         <li> <a href="{{ url('/') }}">Contact</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position: relative; padding-left: 50px;">
+                                    <img src="/uploads/avatars/{{ Auth::user()->avatar }}" style="width: 32px; height: 32px;
+                                     position: absolute; top:10px; left: 10px; border-radius: 50%">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
