@@ -22,10 +22,12 @@
         }
 
         .full-height {
+
             height: 85vh;
         }
 
         .flex-center {
+
             align-items: center;
             display: flex;
             justify-content: center;
@@ -36,6 +38,7 @@
 
         .top-right {
             position: absolute;
+
             right: 10px;
             top: 18px;
         }
