@@ -18,20 +18,24 @@
 
             <!-- Styles -->
             <style>
-                .buttons{
-                    margin-left: 400px;
+                .menu__buttons{
 
                 }
 
             </style>
         </head>
         <body>
-        <div class="buttons">
-            <p style="text-align: center; "><button>Edit the schedule of receptions</button>
-            <p style="text-align: center; "><button>View user profiles</button>
-            <p style="text-align: center; "><button>Delete users</button>
+        <nav>
+        <div class="menu__buttons">
+
+                    <ul>
+                        <a href="">Edit the schedule of receptions </a> </ul>
+            <ul >  <a href="">View user profiles</a> </ul>
+            <ul >  <a href="">Delete users</a>
+                    </ul>
 
         </div>
+        </nav>
         </body>
         </html>
 
