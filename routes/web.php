@@ -23,6 +23,7 @@ Route::post('/home', 'HomeController@update_avatar')->name('home');
 
 Route::get('/contact', 'ContactController@showContact');
 Route::get('/payment', 'PaymentController@showPayment');
+Route::get('/adm', 'AdmController@showAdm');
 
 Route::group(['prefix'=>'admin','middleware'=>'web', 'auth'], function() {
     Route::get('/', ['uses'=>'Admin\AdminController@show','as'=>'admin_index']);
