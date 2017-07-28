@@ -10,7 +10,6 @@ class AdmController extends Controller{
 
     }
 
-
     public function showAdm(){
         return view('adm');
     }
